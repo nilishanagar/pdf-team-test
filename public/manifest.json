@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.0",
+  "id": "YOUR-GUID-HERE",
+  "packageName": "com.example.reactpdfviewer",
+  "name": {
+    "short": "PDF Viewer",
+    "full": "React PDF Viewer App"
+  },
+  "description": {
+    "short": "Upload and view PDFs",
+    "full": "A React app using react-pdf to upload and view PDF files inside Microsoft Teams."
+  },
+  "developer": {
+    "name": "Your Name",
+    "websiteUrl": "https://yourwebsite.com",
+    "privacyUrl": "https://yourwebsite.com/privacy",
+    "termsOfUseUrl": "https://yourwebsite.com/terms"
+  },
+  "staticTabs": [
+    {
+      "entityId": "pdfViewerTab",
+      "name": "PDF Viewer",
+      "contentUrl": "https://YOUR_HOSTED_URL",
+      "websiteUrl": "https://YOUR_HOSTED_URL",
+      "scopes": ["personal"]
+    }
+  ],
+  "permissions": ["identity"],
+  "validDomains": ["YOUR_DOMAIN.com"]
+}
